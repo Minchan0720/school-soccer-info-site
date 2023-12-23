@@ -1,0 +1,603 @@
+/* layout(1) */
+
+body{
+   /*  background-image: url('대기');  */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#team1-a {
+    font-size: 12px;
+}
+#team1-b {
+    font-size: 12px;
+}
+#team2-a {
+    font-size: 12px;
+}
+#team2-b {
+    font-size: 12px;
+}
+#NoisyItLogo{
+    background-color: none;
+    color: #2f4650;
+  
+    width: 100px;
+    height: 25px;
+
+    position: absolute;
+    top: 7px;
+    left: 12px;
+
+    background-image: url("/img/galo_wh.png");
+}
+#dev{
+    background-color: none;
+    width: 100px;
+    height: 25px;
+
+    position: absolute;
+    top: 7px;
+    left: 7.5px;
+
+    background-image: url("/img/dev.png");
+    background-size: cover;
+}
+/* Title & Footer */
+.title{
+    background-color: #C8D1C7;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 40px;
+
+    flex-shrink: 0;
+    text-align: center;
+    }
+
+.titleM{
+    font-size: small;
+    font-weight: bold;
+    color: #37505c;
+
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.ac{
+    font-size: large;
+    font-weight: bold;
+    color: #6596ae;
+}
+
+.footer{
+    background-color: #6D786C;
+    color: white;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+
+    padding: 0%;
+    text-align: center;
+    padding: 0;
+    z-index: 2;
+}
+
+/* Login layout */
+
+#login{
+    background: #6D786C;
+
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+    width: 290px;
+    height: 45px;
+
+    border-radius: 20px 0 0 20px;
+    flex-shrink: 0;
+    z-index: 2;
+}
+#profile{
+    background-image: url('/img/sb.png');
+    background-size: cover; 
+    position: absolute;
+    top: 55px;
+    right: 240px;
+
+    width: 35px;
+    height: 35px;
+
+    z-index: 2;
+    border-radius: 15px;
+}
+#profileN {
+    background-color: #d3d3d3;  /* 연한 회색으로 변경 */
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 55px;
+    right: 140px;
+    width: 90px;
+    height: 35px;
+    z-index: 2;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#profileP {
+    background-color: #d3d3d3;
+
+    position: absolute;
+    top: 55px;
+    right: 5px;
+
+    width: 130px;
+    height: 35px;
+
+    z-index: 2;
+    border-radius: 15px;
+}
+
+#profilePText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#no_login{
+    background: #6D786C;
+
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+    width: 100px;
+    height: 45px;
+
+    border-radius: 20px 0 0 20px;
+    flex-shrink: 0;
+    z-index: 2;
+}
+#no_profile{
+   /* XX 비로그인 */
+}
+#no_profileN {
+    background-color: #d3d3d3;  /* 연한 회색으로 변경 */
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 55px;
+    right: 2px;
+    width: 90px;
+    height: 35px;
+    z-index: 2;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#no_profileP {
+    background-color: #d3d3d3;  /* 연한 회색으로 변경 */
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 55px;
+    right: 2px;
+    width: 90px;
+    height: 35px;
+    z-index: 2;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#no_profilePText {
+   /* XX 비로그인 */
+}
+
+/* layout(2) */
+
+#lec1{
+    background-color: #C8D1C7;
+    color: white;
+
+    position: absolute;
+    bottom: 100px;
+
+    width: 100%;
+    height: 200px;
+
+    margin: 0;
+    flex-shrink: 0;
+    text-align: center;
+    z-index: 2;
+}
+
+#lec1-notice {
+    background-color: #6D786C;
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 230px;
+    width: 95%;
+    height: 50px;
+    margin: 0;
+    flex-shrink: 0;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 2;
+}
+#info{
+  background-color: #b8dfb4;
+  color: white;
+  
+  position: absolute;
+  left: 10px;
+  bottom: 110px;
+  width: 50%;
+  height: 110px;
+  
+  margin: 0;
+  flex-shrink: 0;
+  text-align: center;
+  border-radius: 8px;
+  z-index: 2;
+}
+#myinfo{
+  background-color: #b8dfb4;
+  color: white;
+
+  position: absolute;
+  right: 10px;
+  bottom: 165px;
+  width: 40%;
+  height: 50px;
+
+  margin: 0;
+  flex-shrink: 0;
+  text-align: center;
+  border-radius: 8px;
+  z-index: 2;
+}
+#myvote{
+  background-color: #b8dfb4;
+  color: white;
+
+  position: absolute;
+  right: 10px;
+  bottom: 110px;
+  width: 40%;
+  height: 50px;
+
+  margin: 0;
+  flex-shrink: 0;
+  text-align: center;
+  border-radius: 8px;
+  z-index: 2;
+}
+
+/*경기결과표시*/
+
+/*여기는 첫번째 팀*/
+#play1{
+  background-color: #9bb398;
+  color: white;
+
+  position: absolute;
+  right: 10px;
+  bottom: 360px;
+  width: 50%;
+  height: 50px;
+
+  margin: 0;
+  flex-shrink: 0;
+  text-align: center;
+  border-radius: 12px;
+  z-index: 2;
+}
+#team1-a{
+  background-color: #f7abab;
+  color: white;
+
+  position: absolute;
+  right: 39%;
+  bottom: 365px;
+  width: 10%;
+  height: 38px;
+
+  text-align: center;
+  border-radius: 15px;
+  z-index: 3;
+}
+#team1-b{
+  background-color: #7a7ae1;
+  color: white;
+
+  position: absolute;
+  right: 6%;
+  bottom: 365px;
+  width: 10%;
+  height: 38px;
+
+  text-align: center;
+  border-radius: 15px;
+  z-index: 3;
+}
+#score1-1{
+  background-color: #bfbfbf;
+  color: white;
+
+  position: absolute;
+  right: 32%;
+  bottom: 365px;
+  width: 6%;
+  height: 38px;
+
+  text-align: center;
+  border-radius: 5px;
+  z-index: 3;
+}
+#score1-2{
+  background-color: #bfbfbf;
+  color: white;
+
+  position: absolute;
+  right: 17%;
+  bottom: 365px;
+  width: 6%;
+  height: 38px;
+
+  text-align: center;
+  border-radius: 5px;
+  z-index: 3;
+}
+#dash1{
+  background-color: none;
+  color: black;
+  font-style: bold;
+  font-size: 40px;
+
+  position: absolute;
+  right: 25%;
+  bottom: 410px;
+  width: 6%;
+  height: 10px;
+
+  text-align: center;
+  border-radius: 5px;
+  z-index: 3;
+}
+
+/*여기는 두번째 팀*/
+#play2{
+  background-color: #9bb398;
+  color: white;
+
+  position: absolute;
+  right: 10px;
+  bottom: 300px;
+  width: 60%;
+  height: 50px;
+
+  margin: 0;
+  flex-shrink: 0;
+  text-align: center;
+  border-radius: 12px;
+  z-index: 2;
+}
+#team2-a{
+  background-color: #f7abab;
+  color: white;
+
+  position: absolute;
+  right: 49%;
+  bottom: 305px;
+  width: 10%;
+  height: 38px;
+
+  text-align: center;
+  border-radius: 15px;
+  z-index: 3;
+}
+#team2-b{
+  background-color: #7a7ae1;
+  color: white;
+
+  position: absolute;
+  right: 6%;
+  bottom: 305px;
+  width: 10%;
+  height: 38px;
+
+  text-align: center;
+  border-radius: 15px;
+  z-index: 3;
+}
+#score2-1{
+  background-color: #bfbfbf;
+  color: white;
+
+  position: absolute;
+  right: 40%;
+  bottom: 305px;
+  width: 6%;
+  height: 38px;
+
+  text-align: center;
+  border-radius: 5px;
+  z-index: 3;
+}
+#score2-2{
+  background-color: #bfbfbf;
+  color: white;
+
+  position: absolute;
+  right: 18%;
+  bottom: 305px;
+  width: 6%;
+  height: 38px;
+
+  text-align: center;
+  border-radius: 5px;
+  z-index: 3;
+}
+#dash2{
+  background-color: none;
+  color: black;
+  font-style: bold;
+  font-size: 40px;
+
+  position: absolute;
+  right: 29%;
+  bottom: 350px;
+  width: 6%;
+  height: 10px;
+
+  text-align: center;
+  border-radius: 5px;
+  z-index: 3;
+}
+
+/* 여기서부터 다시 레이아웃 CSS */
+
+#triangle {
+    background: linear-gradient(to bottom right, white 0%, white 50%, #C8D1C7 50%, #C8D1C7 100%);
+    
+    position: absolute;
+    bottom: 300px;
+    right: 50%;
+    
+    width: 90px;
+    height: 122px;
+
+    margin: 0;
+    flex-shrink: 0;
+    z-index: 2;
+}
+
+#lec2{
+    background-color: #C8D1C7;
+    color: white;
+
+    position: absolute;
+    right: 0;
+    bottom: 300px;
+
+    width: 50%;
+    height: 120px;
+    flex-shrink: 0;
+    text-align: center;
+    z-index: 2;
+}
+
+/* Button layout */
+
+/* 1학년 대진표 */
+#firstGrade{
+    background-color: #8B9E8A;
+    color: white;
+
+    position: absolute;
+    top: 150px;
+    left: 0;
+
+    width: 120px;
+    height: 55px;
+
+    border-radius: 0 18px 18px 0;
+    flex-shrink: 0;
+    z-index: 2;
+}
+
+/* 2학년 대진표 */
+#secondGrade{
+    background-color: #8B9E8A;
+    color: white;
+
+    position: absolute;
+    top: 250px;
+    left: 0;
+
+    width: 120px;
+    height: 55px;
+
+    border-radius: 0 18px 18px 0;
+    flex-shrink: 0;
+    z-index: 2;
+}
+
+/* 상품 추첨 */
+#gift{
+    background-color: #8B9E8A;
+    color: white;
+
+    position: absolute;
+    top: 350px;
+    left: 0;
+
+    width: 100px;
+    height: 55px;
+
+    border-radius: 0 18px 18px 0;
+    flex-shrink: 0;
+    z-index: 2;
+    text-align: center;
+}
+.check{
+  background-color: red;
+  position: absolute;
+  top: 85px;
+  right: 240px;
+
+  width: 35px;
+  height: 35px;
+
+  z-index: 2;
+  border-radius: 15px;
+}
+.hidden-page-btn {
+  border: none;
+  background-color: white;
+  padding: 10px;
+}
+@keyframes blink {
+  0% {opacity: 1;}
+  50% {opacity: .5;}
+  100% {opacity: 1;}
+}
+
+.comu_text {
+
+    position: absolute;
+    top: 50px;
+    right: 0;
+    bottom: 0px;
+    height: 3px;
+    top: 350px;
+    width: 100px;
+    height: 45px;
+
+    border-radius: 20px 0 0 20px;
+    flex-shrink: 0;
+    z-index: 2;
+}
+
+.comu_text_right {
+    position: absolute;
+    right: 0;
+    color: gray;
+    animation-name: blink; 
+    animation-duration: 1s; 
+    animation-iteration-count: infinite; 
+}

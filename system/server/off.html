@@ -1,0 +1,41 @@
+<html dir="ltr" lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> | 오프라인</title>
+<style>
+  @charset "utf-8";
+@media (prefers-color-scheme: light) {
+  body { background-color: rgb(255, 255, 255); }
+  div { color: rgb(31, 31, 31); }
+}
+.button {
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+}
+@media (prefers-color-scheme: dark) {
+  body { background-color: rgb(31, 31, 31); }
+  div { color: rgb(227, 227, 227); }
+}
+.center { left: 50%; position: fixed; top: 50%; transform: translate(-50%, -50%); }
+.sexy_gps { left: 50%; position: fixed; top: 90%; transform: translate(-50%, -50%); }
+.icon { height: 160px; width: 160px; }
+.message { font-family: "system-ui", sans-serif; font-size: 18px; text-align: center; width: 80%; }
+</style>
+  </head>
+  <body style="font-family: 'Segoe UI',Arial,'Malgun Gothic',Gulim,sans-serif;font-size:75%">
+    <img id="icon" src="/img/noisy.png" class="center icon" alt="Noisy IT">
+    <div class="sexy_gps message">오프라인 상태입니다</div>
+    <div class="sexy_gps message" style="position: fixed; top: 60%;">
+        <button class="button" onclick="location.href='index.php'">재접속하기</button>
+    </div>
+  </body>
+</html>

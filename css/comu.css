@@ -1,0 +1,257 @@
+  <style>
+    
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.message-input {
+  width: 80%;
+  padding-left: 5px;
+  background-color: white;
+  border: 1px solid black;
+  border-right: none;
+}
+
+
+.message-send-btn {
+  padding: 5px 8px;
+  border: none;
+  cursor: pointer;
+}
+
+
+    /* 기존 스타일 코드들... */
+
+    /* 스크롤 제한 스타일 추가 */
+  #message-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-height: 200px; /* 높이는 필요에 따라 변경할 수 있습니다. */
+    overflow-y: auto;
+  }
+    /* 스크롤 표 스타일 */
+    .ranking-table-wrapper {
+      height: 125px;
+      overflow-y: scroll;
+    }     /* 작동 X */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #DCDCDC;
+      color: black;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0px;
+    }
+    .box {
+      background-color: white;
+      border: 1px solid black;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      margin: 10px; /* 수정한 부분 */  
+    }
+    .box_ds {
+      background-color: white;
+      border: 1px solid black;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      border-bottom: 1px solid black;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .title-dev {
+      font-size: 24px;
+      font-weight: bold;
+      border-bottom: 1px solid black;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+    }
+    .title_M {
+      font-size: 24px;
+      font-weight: bold;
+      border-bottom: 1px solid black;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    text-align: center; /* 가로 중앙 정렬 */
+    display: flex; /* 요소를 가로 방향으로 배열하기 위한 flex 설정 */
+    justify-content: center; /* 가로 방향으로 요소 중앙 정렬 */
+    }
+.title_M span:nth-child(1) {
+    color: blue;
+}
+.title_M span:nth-child(2) {
+    color: red;
+}
+.title_M span:nth-child(3) {
+    color: green;
+}
+.title_M span:nth-child(4) {
+    color: orange;
+}
+.title_M span:nth-child(5) {
+    color: purple;
+}
+.title_M span:nth-child(6) {
+    color: brown;
+}
+.title_M span:nth-child(7) {
+    color: navy;
+}
+.title_M span:nth-child(8) {
+    color: pink;
+}
+  .title_M a {
+    text-decoration: none; /* 밑줄 없애기 */
+    letter-spacing: 3px; /* 글자간 간격 조정 */
+  }
+
+
+    .menu, .ranking, .community {
+      font-size: 14px;
+    }
+    button {
+      background-color: white;
+      border: 1px solid black;
+      color: black;
+      padding: 6px 12px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 5px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    #ranking {
+    display: block;
+    }
+    
+    #attendance {
+    display: none;
+    }
+#support-butt {
+  margin-right: 5px;
+}
+
+#check_cs {
+  margin-left: 5px;
+}
+
+.divider {
+  border-top: 1px solid black; /* 가로선 스타일 지정 */
+  margin: 20px 0; /* 위아래 여백 지정 */
+}
+
+.section-title-1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+.section-title-2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+.red {
+  color: red;
+  font-size: 20px;
+  text-shadow: 0px 0px 10px rgba(255, 0, 0, 1);
+  animation: redBlink 3s ease-in-out alternate infinite;
+}
+
+.blue {
+  color: blue;
+  font-size: 20px;
+  text-shadow: 0px 0px 10px rgba(0, 0, 255, 1);
+  animation: blueBlink 3s ease-in-out alternate infinite;
+}
+
+@keyframes redBlink {
+  from { color: red; }
+  to { color: blue; }
+}
+
+@keyframes blueBlink {
+  from { color: blue; }
+  to { color: red; }
+}
+
+
+	.title-an {
+    color: black;
+    font-size: 24px;
+    animation: blink 0.1s linear infinite alternate;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	}
+
+	@keyframes blink {
+		from {
+  			color: #0544ff;
+		}
+		to {
+			color: #7d7d7d;
+		}
+	}
+    .xs {
+        text-align: center;
+        font-size: 24px;
+        color: #ff8000; /* 네온효과 색상 */
+        text-shadow: 0 0 10px #8cff00; /* 네온효과(주황색 그림자) 적용 */
+        box-shadow: 0 0 10px #ff8000, 0 0 20px #ff8000, 0 0 30px #ff8000, 0 0 40px #f99, 0 0 70px #f00; /* 네온효과(그림자) 적용 */
+        animation: xs 1s infinite; /* 깜빡이는 애니메이션 적용 */
+        animation-direction: alternate; /* 왕복하는 애니메이션으로 변경 */
+        animation-timing-function: linear; /* 등속도로 애니메이션 동작 */
+    }
+
+    @keyframes xs { /* @keyframes 규칙으로 애니메이션 정의 */
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+  </style>
